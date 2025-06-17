@@ -1,11 +1,19 @@
 import { getRequestConfig } from 'next-intl/server'
 
-const locales = ['uz', 'en', 'ru']
-
 export default getRequestConfig(async ({ locale }) => {
-	const selectedLocale = locale ?? 'ru' // fallback to 'ru' if locale is undefined
+	const selectedLocale = locale ?? 'ru'
+
+	let messages
+	if (selectedLocale === 'uz') {
+		messages = (await import('../messages/uz.json')).default
+	} else if (selectedLocale === 'en') {
+		messages = (await import('../messages/en.json')).default
+	} else {
+		messages = (await import('../messages/ru.json')).default
+	}
+
 	return {
 		locale: selectedLocale,
-		messages: (await import(`../messages/${selectedLocale}.json`)).default,
+		messages,
 	}
 })

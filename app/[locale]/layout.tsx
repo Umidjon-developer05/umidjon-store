@@ -1,69 +1,57 @@
+// 👇 ESLATMA: filename — app/layout.tsx bo'lishi kerak, yoki app/[locale]/layout.tsx bo‘lsa, uni app/layout.tsx qilib qo‘y
 import type React from 'react'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages } from 'next-intl/server'
-import { routing } from '@/i18n/routing'
 import '../globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export function generateStaticParams() {
-	return routing.locales.map(locale => ({ locale }))
-}
-
-export async function generateMetadata({
-	params: { locale },
-}: {
-	params: { locale: string }
-}): Promise<Metadata> {
-	const titles = {
-		uz: 'Umidjon - Freelancer Dasturchi | Telegram Bot, Admin Panel, Mobil Ilova',
-		en: 'Umidjon - Freelance Developer | Telegram Bot, Admin Panel, Mobile App',
-		ru: 'Umidjon - Фриланс Разработчик | Telegram Бот, Админ Панель, Мобильное Приложение',
-	}
-
-	const descriptions = {
-		uz: 'Professional freelancer dasturchi. Telegram botlar, veb admin panellar, mobil ilovalar yarataman. 3+ yillik tajriba, 50+ muvaffaqiyatli loyiha.',
-		en: 'Professional freelance developer. I create Telegram bots, web admin panels, mobile applications. 3+ years experience, 50+ successful projects.',
-		ru: 'Профессиональный фриланс разработчик. Создаю Telegram боты, веб админ панели, мобильные приложения. 3+ года опыта, 50+ успешных проектов.',
-	}
-
+export async function generateMetadata(): Promise<Metadata> {
 	return {
-		title: titles[locale as keyof typeof titles] || titles.uz,
+		title:
+			'Umidjon - Freelance Developer | Telegram Bot, Admin Panel, Mobile App',
 		description:
-			descriptions[locale as keyof typeof descriptions] || descriptions.uz,
+			'Professional freelance developer. I create Telegram bots, web admin panels, mobile applications. 3+ years experience, 50+ successful projects.',
 		keywords:
 			'freelancer, developer, telegram bot, admin panel, mobile app, react, next.js, node.js',
 		openGraph: {
-			title: titles[locale as keyof typeof titles] || titles.uz,
+			title:
+				'Umidjon - Freelance Developer | Telegram Bot, Admin Panel, Mobile App',
 			description:
-				descriptions[locale as keyof typeof descriptions] || descriptions.uz,
+				'Professional freelance developer. I create Telegram bots, web admin panels, mobile applications. 3+ years experience, 50+ successful projects.',
 			images: [
 				{
 					url: '/umidjon-work.png',
 					width: 800,
 					height: 600,
-					alt: titles[locale as keyof typeof titles] || titles.uz,
+					alt: 'Umidjon - Freelance Developer | Telegram Bot, Admin Panel, Mobile App',
 				},
 			],
 		},
+		metadataBase: new URL('https://umidjon.store'),
 	}
 }
 
-export default async function LocaleLayout({
+// ✅ endi faqat 'en' uchun ishlaydi
+export default async function RootLayout({
 	children,
-	params: { locale },
 }: {
 	children: React.ReactNode
-	params: { locale: string }
 }) {
-	const messages = await getMessages({ locale })
+	let messages
+	try {
+		messages = await getMessages({ locale: 'en' })
+	} catch (error) {
+		console.error('Failed to load messages:', error)
+		messages = {} // fallback
+	}
 
 	return (
-		<html lang={locale}>
+		<html lang='en'>
 			<body className={inter.className}>
-				<NextIntlClientProvider messages={messages} locale={locale}>
+				<NextIntlClientProvider messages={messages} locale='en'>
 					{children}
 				</NextIntlClientProvider>
 			</body>
