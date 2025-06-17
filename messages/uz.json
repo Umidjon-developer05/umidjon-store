@@ -1,0 +1,159 @@
+{
+	"hero": {
+		"greeting": "Salom, men",
+		"name": "Umidjon",
+		"title": "freelancer dasturchi",
+		"description": "Siz uchun loyiha qilaman: Telegram botlar, veb admin panellar , mobil ilovalar...",
+		"telegramBots": "Telegram botlar",
+		"adminPanels": "veb admin panellar",
+		"mobileApps": "mobil ilovalar",
+		"cta": "Loyihangiz haqida yozing",
+		"viewServices": "Xizmatlarni ko'rish"
+	},
+	"serviceSelector": {
+		"title": "Sizga nima kerak?",
+		"subtitle": "Yo'nalishni tanlang va batafsil ma'lumot oling",
+		"services": {
+			"telegramBot": {
+				"title": "Telegram bot",
+				"description": "Telegram orqali mijozlaringiz bilan avtomatik ishlash, buyurtmalar qabul qilish va boshqarish",
+				"example": "Misol: Restoran uchun buyurtma bot - menyu ko'rsatish, buyurtma qabul qilish, to'lov"
+			},
+			"adminPanel": {
+				"title": "Admin Panel",
+				"description": "Biznesingizni boshqarish uchun maxsus veb-panel - ma'lumotlar, hisobotlar, sozlamalar",
+				"example": "Misol: Do'kon uchun admin panel - mahsulotlar, buyurtmalar, mijozlar boshqaruvi"
+			},
+			"mobileApp": {
+				"title": "Mobil ilova",
+				"description": "Android va iOS uchun mobil ilovalar - mijozlar uchun qulay interfeys",
+				"example": "Misol: Yetkazib berish ilovasi - buyurtma berish, kuzatish, to'lov"
+			},
+			"website": {
+				"title": "Veb sayt",
+				"description": "Zamonaviy veb-saytlar - biznes uchun onlayn mavjudlik va mijozlar jalb qilish",
+				"example": "Misol: Kompaniya sayti - xizmatlar, portfolio, bog'lanish"
+			}
+		}
+	},
+	"services": {
+		"title": "Qaysi yo'nalishda ishlayman",
+		"subtitle": "Zamonaviy texnologiyalar yordamida sizning biznesingiz uchun to'liq yechimlar",
+		"viewExample": "Namuna ko'rish",
+		"items": {
+			"telegramBots": {
+				"title": "Telegram Botlar",
+				"description": "Biznesingiz uchun avtomatik yordamchi. Buyurtmalar, ma'lumotlar, mijozlar bilan ishlash."
+			},
+			"adminPanels": {
+				"title": "Admin Panellar",
+				"description": "Ma'lumotlarni boshqarish, hisobotlar, sozlamalar uchun zamonaviy veb-interfeys."
+			},
+			"mobileApps": {
+				"title": "Mobil Ilovalar",
+				"description": "Android va iOS uchun cross-platform ilovalar. Tez, ishonchli, chiroyli."
+			},
+			"database": {
+				"title": "Ma'lumotlar Bazasi",
+				"description": "Tezkor va xavfsiz ma'lumotlar saqlash. Backup va optimizatsiya."
+			},
+			"apiIntegration": {
+				"title": "API Integratsiya",
+				"description": "Turli xizmatlarni bog'lash: to'lov tizimlari, SMS, email, ijtimoiy tarmoqlar."
+			},
+			"security": {
+				"title": "Xavfsizlik",
+				"description": "Ma'lumotlar himoyasi, autentifikatsiya, ruxsatlar tizimi."
+			}
+		}
+	},
+	"projects": {
+		"title": "Loyihalar",
+		"subtitle": "Mening yaratgan loyihalarim - har biri o'ziga xos yechim va texnologiyalar",
+		"demo": "Demo",
+		"github": "GitHub",
+		"items": {
+			"restaurantBot": {
+				"title": "Restoran Buyurtma Boti",
+				"description": "Telegram orqali ovqat buyurtma qilish, to'lov va yetkazib berish tizimi",
+				"category": "Telegram Bot"
+			},
+			"ecommerceAdmin": {
+				"title": "E-commerce Admin Panel",
+				"description": "Onlayn do'kon boshqaruvi: mahsulotlar, buyurtmalar, mijozlar, hisobotlar",
+				"category": "Admin Panel"
+			},
+			"deliveryApp": {
+				"title": "Yetkazib Berish Ilovasi",
+				"description": "Kuryer va mijozlar uchun mobil ilova - buyurtma kuzatish, GPS",
+				"category": "Mobil Ilova"
+			},
+			"crmSystem": {
+				"title": "CRM Tizimi",
+				"description": "Mijozlar bilan ishlash, sotuv jarayoni, hisobotlar va analitika",
+				"category": "Veb Sayt"
+			},
+			"learningPlatform": {
+				"title": "Onlayn Ta'lim Platformasi",
+				"description": "Video darslar, testlar, sertifikatlar - to'liq ta'lim tizimi",
+				"category": "Veb Sayt"
+			},
+			"inventoryBot": {
+				"title": "Inventar Boshqaruv Boti",
+				"description": "Ombor va mahsulotlar hisobini yuritish uchun Telegram bot",
+				"category": "Telegram Bot"
+			}
+		}
+	},
+	"about": {
+		"title": "Men haqimda",
+		"experience": "3+ yillik tajriba",
+		"bio1": "Men 2022-yildan beri dasturlash bilan shug'ullanaman. Telegram botlar, veb-saytlar va mobil ilovalar yaratishda ixtisoslashganman. 50+ loyiha muvaffaqiyatli yakunlangan.",
+		"bio2": "Har bir loyihani boshlashdan oldin siz bilan batafsil texnik topshiriq ishlab chiqaman. Bu sizning vaqtingiz va pullaringizni tejaydi, natija esa kutganingizdan ham yaxshi bo'ladi.",
+		"workProcess": "Ishlash jarayonim:",
+		"processSteps": {
+			"analysis": "Loyiha tahlili va texnik topshiriq",
+			"design": "Dizayn va arxitektura rejalashtirish",
+			"development": "Bosqichma-bosqich ishlab chiqish",
+			"testing": "Test qilish va optimizatsiya",
+			"delivery": "Topshirish va qo'llab-quvvatlash"
+		},
+		"technologies": "Foydalanadigan texnologiyalar"
+	},
+	"contact": {
+		"title": "Bog'lanish",
+		"subtitle": "Loyihangiz haqida yozing. Bepul maslahat va taklif olasiz!",
+		"form": {
+			"title": "Xabar yuborish",
+			"name": "Ismingiz",
+			"email": "Email",
+			"telegram": "Telegram username (ixtiyoriy)",
+			"message": "Loyihangiz haqida",
+			"messagePlaceholder": "Qanday loyiha kerak? Qaysi funksiyalar bo'lishi kerak? Budjet qancha?",
+			"submit": "Xabar yuborish",
+			"submitting": "Yuborilmoqda..."
+		},
+		"success": {
+			"title": "Xabar yuborildi!",
+			"message": "Tez orada siz bilan bog'lanaman. Telegram orqali javob beraman.",
+			"sendAnother": "Yana xabar yuborish"
+		},
+		"quickResponse": {
+			"title": "Tezkor javob",
+			"message": "Odatda 2-3 soat ichida javob beraman. Telegram orqali bog'lanish eng tez yo'l."
+		},
+		"freeConsultation": {
+			"title": "Bepul maslahat",
+			"message": "Loyihangiz haqida gaplashib, eng yaxshi yechimni topamiz. Maslahat mutlaqo bepul!",
+			"services": {
+				"analysis": "Texnik tahlil",
+				"pricing": "Vaqt va narx hisoblash",
+				"technologies": "Texnologiyalar tanlash",
+				"planning": "Loyiha rejasi"
+			}
+		}
+	},
+	"common": {
+		"required": "*"
+	}
+}

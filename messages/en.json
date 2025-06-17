@@ -1,0 +1,159 @@
+{
+	"hero": {
+		"greeting": "Hello, I'm",
+		"name": "Umidjon",
+		"title": "freelance developer",
+		"description": "I create projects for you: Telegram bots, Web admin panels, mobile applications...",
+		"telegramBots": "Telegram bots",
+		"adminPanels": "web admin panels",
+		"mobileApps": "mobile applications",
+		"cta": "Tell me about your project",
+		"viewServices": "View Services"
+	},
+	"serviceSelector": {
+		"title": "What do you need?",
+		"subtitle": "Choose a direction and get detailed information",
+		"services": {
+			"telegramBot": {
+				"title": "Telegram bot",
+				"description": "Automate customer interactions via Telegram, accept orders and manage business",
+				"example": "Example: Restaurant ordering bot - show menu, accept orders, payments"
+			},
+			"adminPanel": {
+				"title": "Admin Panel",
+				"description": "Custom web panel for business management - data, reports, settings",
+				"example": "Example: Store admin panel - products, orders, customer management"
+			},
+			"mobileApp": {
+				"title": "Mobile app",
+				"description": "Mobile applications for Android and iOS - convenient interface for customers",
+				"example": "Example: Delivery app - place orders, track, payments"
+			},
+			"website": {
+				"title": "Website",
+				"description": "Modern websites - online presence and customer attraction for business",
+				"example": "Example: Company website - services, portfolio, contacts"
+			}
+		}
+	},
+	"services": {
+		"title": "What I Do",
+		"subtitle": "Complete solutions for your business using modern technologies",
+		"viewExample": "View Example",
+		"items": {
+			"telegramBots": {
+				"title": "Telegram Bots",
+				"description": "Automated assistant for your business. Orders, data, customer management."
+			},
+			"adminPanels": {
+				"title": "Admin Panels",
+				"description": "Modern web interface for data management, reports, and settings."
+			},
+			"mobileApps": {
+				"title": "Mobile Apps",
+				"description": "Cross-platform apps for Android and iOS. Fast, reliable, beautiful."
+			},
+			"database": {
+				"title": "Database",
+				"description": "Fast and secure data storage. Backup and optimization."
+			},
+			"apiIntegration": {
+				"title": "API Integration",
+				"description": "Connect various services: payment systems, SMS, email, social networks."
+			},
+			"security": {
+				"title": "Security",
+				"description": "Data protection, authentication, permission systems."
+			}
+		}
+	},
+	"projects": {
+		"title": "Projects",
+		"subtitle": "My created projects - each with unique solutions and technologies",
+		"demo": "Demo",
+		"github": "GitHub",
+		"items": {
+			"restaurantBot": {
+				"title": "Restaurant Order Bot",
+				"description": "Food ordering via Telegram, payment and delivery system",
+				"category": "Telegram Bot"
+			},
+			"ecommerceAdmin": {
+				"title": "E-commerce Admin Panel",
+				"description": "Online store management: products, orders, customers, reports",
+				"category": "Admin Panel"
+			},
+			"deliveryApp": {
+				"title": "Delivery App",
+				"description": "Mobile app for couriers and customers - order tracking, GPS",
+				"category": "Mobile App"
+			},
+			"crmSystem": {
+				"title": "CRM System",
+				"description": "Customer management, sales process, reports and analytics",
+				"category": "Website"
+			},
+			"learningPlatform": {
+				"title": "Online Learning Platform",
+				"description": "Video lessons, tests, certificates - complete education system",
+				"category": "Website"
+			},
+			"inventoryBot": {
+				"title": "Inventory Management Bot",
+				"description": "Telegram bot for warehouse and product inventory tracking",
+				"category": "Telegram Bot"
+			}
+		}
+	},
+	"about": {
+		"title": "About Me",
+		"experience": "3+ years experience",
+		"bio1": "I've been programming since 2022. I specialize in creating Telegram bots, websites and mobile applications. 50+ projects successfully completed.",
+		"bio2": "Before starting each project, I develop a detailed technical specification with you. This saves your time and money, and the result is even better than expected.",
+		"workProcess": "My work process:",
+		"processSteps": {
+			"analysis": "Project analysis and technical specification",
+			"design": "Design and architecture planning",
+			"development": "Step-by-step development",
+			"testing": "Testing and optimization",
+			"delivery": "Delivery and support"
+		},
+		"technologies": "Technologies I use"
+	},
+	"contact": {
+		"title": "Contact",
+		"subtitle": "Tell me about your project. Get free consultation and proposal!",
+		"form": {
+			"title": "Send Message",
+			"name": "Your Name",
+			"email": "Email",
+			"telegram": "Telegram username (optional)",
+			"message": "About your project",
+			"messagePlaceholder": "What kind of project do you need? What features should it have? What's the budget?",
+			"submit": "Send Message",
+			"submitting": "Sending..."
+		},
+		"success": {
+			"title": "Message sent!",
+			"message": "I'll contact you soon. I'll respond via Telegram.",
+			"sendAnother": "Send another message"
+		},
+		"quickResponse": {
+			"title": "Quick Response",
+			"message": "I usually respond within 2-3 hours. Telegram is the fastest way to contact."
+		},
+		"freeConsultation": {
+			"title": "Free Consultation",
+			"message": "Let's discuss your project and find the best solution. Consultation is absolutely free!",
+			"services": {
+				"analysis": "Technical analysis",
+				"pricing": "Time and cost calculation",
+				"technologies": "Technology selection",
+				"planning": "Project planning"
+			}
+		}
+	},
+	"common": {
+		"required": "*"
+	}
+}
