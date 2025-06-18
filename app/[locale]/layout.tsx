@@ -16,6 +16,9 @@ export async function generateMetadata(): Promise<Metadata> {
 			'Professional freelance developer. I create Telegram bots, web admin panels, mobile applications. 3+ years experience, 50+ successful projects.',
 		keywords:
 			'freelancer, developer, telegram bot, admin panel, mobile app, react, next.js, node.js',
+		icons: {
+			icon: '/logo.svg',
+		},
 		openGraph: {
 			title:
 				'Umidjon - Freelance Developer | Telegram Bot, Admin Panel, Mobile App',
@@ -37,12 +40,16 @@ export async function generateMetadata(): Promise<Metadata> {
 // ✅ endi faqat 'en' uchun ishlaydi
 export default async function RootLayout({
 	children,
+	params,
 }: {
 	children: React.ReactNode
+	params: { locale: string }
 }) {
+	const locale = params.locale
+	console.log('locale: ', locale)
 	let messages
 	try {
-		messages = await getMessages({ locale: 'en' })
+		messages = await getMessages({ locale: locale })
 	} catch (error) {
 		console.error('Failed to load messages:', error)
 		messages = {} // fallback
