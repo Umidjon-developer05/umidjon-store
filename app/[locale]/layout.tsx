@@ -7,7 +7,9 @@ import { getMessages } from 'next-intl/server'
 import '../globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
-
+export function generateStaticParams() {
+	return [{ locale: 'en' }, { locale: 'uz' }, { locale: 'ru' }]
+}
 export async function generateMetadata(): Promise<Metadata> {
 	return {
 		title:
@@ -46,7 +48,7 @@ export default async function RootLayout({
 	params: { locale: string }
 }) {
 	const locale = params.locale
-	console.log('locale: ', locale)
+
 	let messages
 	try {
 		messages = await getMessages({ locale: locale })

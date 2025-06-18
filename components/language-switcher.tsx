@@ -18,18 +18,25 @@ const languages = [
 ]
 
 export function LanguageSwitcher() {
-	const locale = useLocale()
 	const router = useRouter()
 	const pathname = usePathname()
 
 	const handleLanguageChange = (newLocale: string) => {
-		const segments = pathname.split('/')
-		segments[1] = newLocale
-		router.push(segments.join('/'))
+		if (newLocale !== pathname.split('/')[1]) {
+			const segments = pathname.split('/')
+			// Replace the first segment if it matches a language code
+			if (languages.some(lang => lang.code === segments[1])) {
+				segments[1] = newLocale
+			} else {
+				segments.splice(1, 0, newLocale)
+			}
+			const newPath = segments.join('/') || '/'
+			router.push(newPath)
+		}
 	}
-
-	const currentLanguage = languages.find(lang => lang.code === locale)
-
+	const currentLanguage = languages.find(
+		lang => lang.code === pathname.split('/')[1]
+	)
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
@@ -45,7 +52,7 @@ export function LanguageSwitcher() {
 						key={language.code}
 						onClick={() => handleLanguageChange(language.code)}
 						className={`cursor-pointer ${
-							locale === language.code ? 'bg-blue-50' : ''
+							pathname.split('/')[1] === language.code ? 'bg-blue-50' : ''
 						}`}
 					>
 						<span className='mr-2'>{language.flag}</span>

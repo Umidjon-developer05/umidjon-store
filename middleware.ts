@@ -8,7 +8,6 @@ export const config = {
 		// Root route uchun redirect
 		'/',
 
-		// Lokal prefikslar bilan barcha sahifalar
 		'/(uz|en|ru)/:path*',
 
 		// Boshqa barcha route'lar, ammo API, next, static fayllarsiz
