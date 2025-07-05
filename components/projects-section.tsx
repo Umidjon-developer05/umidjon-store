@@ -67,12 +67,10 @@ export function ProjectsSection() {
 	]
 
 	return (
-		<section id='projects' className='py-20 px-4 bg-gray-50'>
+		<section id='projects' className='py-20 px-4 '>
 			<div className='container max-w-6xl mx-auto'>
 				<div className='text-center mb-16'>
-					<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
-						{t('title')}
-					</h2>
+					<h2 className='text-3xl md:text-4xl font-bold  mb-4'>{t('title')}</h2>
 					<p className='text-xl text-gray-600 max-w-2xl mx-auto'>
 						{t('subtitle')}
 					</p>
@@ -82,7 +80,7 @@ export function ProjectsSection() {
 					{projects.map((project, index) => (
 						<Card
 							key={index}
-							className='group overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2'
+							className='group overflow-hidden border shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2'
 						>
 							<div className='relative overflow-hidden'>
 								<Image
@@ -100,9 +98,7 @@ export function ProjectsSection() {
 							</div>
 
 							<CardContent className='p-6'>
-								<h3 className='text-xl font-bold text-gray-900 mb-2'>
-									{project.title}
-								</h3>
+								<h3 className='text-xl font-bold  mb-2'>{project.title}</h3>
 								<p className='text-gray-600 mb-4 leading-relaxed'>
 									{project.description}
 								</p>

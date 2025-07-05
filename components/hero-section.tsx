@@ -28,7 +28,7 @@ export function HeroSection() {
 					</div>
 				</div>
 
-				<h1 className='text-4xl md:text-6xl font-bold text-gray-900 mb-6'>
+				<h1 className='text-4xl md:text-6xl font-bold mb-6'>
 					{t('greeting')} <span className='text-blue-600'>{t('name')}</span>
 					<br />
 					<span className='text-2xl md:text-4xl text-gray-600'>
@@ -68,7 +68,7 @@ export function HeroSection() {
 								.getElementById('services')
 								?.scrollIntoView({ behavior: 'smooth' })
 						}
-						className='px-8 py-4 text-lg rounded-full border-2 hover:bg-gray-50'
+						className='px-8 py-4 text-lg rounded-full border-2 '
 					>
 						<ArrowDown className='mr-2 h-5 w-5' />
 						{t('viewServices')}

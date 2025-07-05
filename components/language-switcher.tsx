@@ -52,7 +52,9 @@ export function LanguageSwitcher() {
 						key={language.code}
 						onClick={() => handleLanguageChange(language.code)}
 						className={`cursor-pointer ${
-							pathname.split('/')[1] === language.code ? 'bg-blue-50' : ''
+							pathname.split('/')[1] === language.code
+								? 'bg-blue-50 text-black'
+								: ''
 						}`}
 					>
 						<span className='mr-2'>{language.flag}</span>

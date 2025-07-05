@@ -8,12 +8,10 @@ export function AboutSection() {
 	const t = useTranslations('about')
 
 	return (
-		<section className='py-20 px-4 bg-white'>
+		<section className='py-20 px-4 '>
 			<div className='container max-w-4xl mx-auto'>
 				<div className='text-center mb-16'>
-					<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
-						{t('title')}
-					</h2>
+					<h2 className='text-3xl md:text-4xl font-bold mb-4'>{t('title')}</h2>
 				</div>
 
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16'>
@@ -30,13 +28,11 @@ export function AboutSection() {
 					</div>
 
 					<div className='space-y-6'>
-						<h3 className='text-2xl font-bold text-gray-900'>
-							{t('experience')}
-						</h3>
+						<h3 className='text-2xl font-bold '>{t('experience')}</h3>
 						<p className='text-lg text-gray-600 leading-relaxed'>{t('bio1')}</p>
 						<p className='text-lg text-gray-600 leading-relaxed'>{t('bio2')}</p>
 
-						<div className='bg-blue-50 p-6 rounded-xl'>
+						<div className='border shadow-md p-6 rounded-xl'>
 							<h4 className='font-semibold text-blue-900 mb-2'>
 								{t('workProcess')}
 							</h4>
@@ -51,9 +47,9 @@ export function AboutSection() {
 					</div>
 				</div>
 
-				<Card className='bg-gray-50 border-0'>
+				<Card className=' border'>
 					<CardContent className='p-8'>
-						<h3 className='text-2xl font-bold text-gray-900 mb-8 text-center'>
+						<h3 className='text-2xl font-bold  mb-8 text-center'>
 							{t('technologies')}
 						</h3>
 						<p>

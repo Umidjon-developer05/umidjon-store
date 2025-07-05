@@ -54,12 +54,10 @@ export function ServicesSection() {
 	]
 
 	return (
-		<section id='services' className='py-20 px-4 bg-white'>
+		<section id='services' className='py-20 px-4 '>
 			<div className='container max-w-6xl mx-auto'>
 				<div className='text-center mb-16'>
-					<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
-						{t('title')}
-					</h2>
+					<h2 className='text-3xl md:text-4xl font-bold  mb-4'>{t('title')}</h2>
 					<p className='text-xl text-gray-600 max-w-2xl mx-auto'>
 						{t('subtitle')}
 					</p>
@@ -71,7 +69,7 @@ export function ServicesSection() {
 						return (
 							<Card
 								key={index}
-								className='group hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2'
+								className='group  hover:shadow-xl transition-all duration-300 border shadow-lg hover:-translate-y-2'
 							>
 								<CardHeader className='pb-4'>
 									<div
@@ -79,7 +77,7 @@ export function ServicesSection() {
 									>
 										<Icon className='h-6 w-6 text-white' />
 									</div>
-									<CardTitle className='text-xl font-bold text-gray-900'>
+									<CardTitle className='text-xl font-bold '>
 										{service.title}
 									</CardTitle>
 								</CardHeader>
@@ -112,7 +110,6 @@ export function ServicesSection() {
 							</Card>
 						)
 					})}
-          
 				</div>
 			</div>
 		</section>

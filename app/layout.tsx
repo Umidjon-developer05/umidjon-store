@@ -1,6 +1,7 @@
 import { getMessages } from 'next-intl/server'
 import { NextIntlClientProvider } from 'next-intl'
 import { Inter } from 'next/font/google'
+import { ThemeProvider } from '@/components/theme-provider'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -23,7 +24,14 @@ export default async function RootLayout({
 		<html lang={params.locale}>
 			<body className={inter.className}>
 				<NextIntlClientProvider messages={messages} locale={params.locale}>
-					{children}
+					<ThemeProvider
+						attribute='class'
+						defaultTheme='system'
+						enableSystem
+						disableTransitionOnChange
+					>
+						{children}
+					</ThemeProvider>
 				</NextIntlClientProvider>
 			</body>
 		</html>

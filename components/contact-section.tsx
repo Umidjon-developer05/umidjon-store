@@ -55,10 +55,7 @@ export function ContactSection() {
 
 	if (isSubmitted) {
 		return (
-			<section
-				id='contact'
-				className='py-20 px-4 bg-gradient-to-br from-blue-50 to-purple-50'
-			>
+			<section id='contact' className='py-20 px-4 '>
 				<div className='container max-w-2xl mx-auto text-center'>
 					<Card className='border-0 shadow-xl'>
 						<CardContent className='p-12'>
@@ -80,24 +77,19 @@ export function ContactSection() {
 	}
 
 	return (
-		<section
-			id='contact'
-			className='py-20 px-4 bg-gradient-to-br from-blue-50 to-purple-50'
-		>
+		<section id='contact' className='py-20 px-4 '>
 			<div className='container max-w-4xl mx-auto'>
 				<div className='text-center mb-16'>
-					<h2 className='text-3xl md:text-4xl font-bold text-gray-900 mb-4'>
-						{t('title')}
-					</h2>
+					<h2 className='text-3xl md:text-4xl font-bold  mb-4'>{t('title')}</h2>
 					<p className='text-xl text-gray-600 max-w-2xl mx-auto'>
 						{t('subtitle')}
 					</p>
 				</div>
 
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-12'>
-					<Card className='border-0 shadow-xl'>
+					<Card className='border shadow-xl'>
 						<CardHeader>
-							<CardTitle className='text-2xl text-gray-900 flex items-center gap-2'>
+							<CardTitle className='text-2xl  flex items-center gap-2'>
 								<MessageCircle className='h-6 w-6 text-blue-600' />
 								{t('form.title')}
 							</CardTitle>
@@ -176,7 +168,7 @@ export function ContactSection() {
 					</Card>
 
 					<div className='space-y-8'>
-						<Card className='border-0 shadow-lg bg-blue-600 text-white'>
+						<Card className='border shadow-lg bg-blue-600 text-white'>
 							<CardContent className='p-8'>
 								<h3 className='text-xl font-bold mb-4'>
 									{t('quickResponse.title')}
@@ -189,9 +181,9 @@ export function ContactSection() {
 							</CardContent>
 						</Card>
 
-						<Card className='border-0 shadow-lg'>
+						<Card className='border shadow-lg'>
 							<CardContent className='p-8'>
-								<h3 className='text-xl font-bold text-gray-900 mb-4'>
+								<h3 className='text-xl font-bold  mb-4'>
 									{t('freeConsultation.title')}
 								</h3>
 								<p className='text-gray-600 mb-4'>
